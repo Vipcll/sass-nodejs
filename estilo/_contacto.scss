@@ -1,0 +1,30 @@
+@mixin theme($var: 0)  {
+    margin: $var;
+    border-radius: 5px;
+}
+
+.contacto {
+    text-align: center;
+    border: 3px solid #e80101;
+    border-radius: 5px;
+    box-shadow: 2px 4px 13px 1px #e80101;
+    @include theme();
+
+    img {
+        max-width: 30vw;
+        min-height: 30vh;
+        border: 5px solid $color;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px 1px $color;
+        @include theme();
+    }
+
+    article {
+        text-align: center;
+        padding: 0;
+        border-radius: 5px;
+        border-top: 3px solid #e80101;
+        box-shadow: 2px 4px 13px 1px #e80101;
+        @include theme($var: 1px);
+    }
+}

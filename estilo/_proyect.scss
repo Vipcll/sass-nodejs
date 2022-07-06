@@ -1,0 +1,22 @@
+.proyect {
+
+    h1,
+    h2 {
+        font-family: $fuente;
+        position: relative;
+    }
+
+    p {
+        @extend %uso;
+    }
+
+    img {
+        max-width: 30vh;
+        min-height: 20vh;
+        border: 5px solid $color;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px 1px $color;
+        margin: 4vw 0 0 0;
+    }
+}
+

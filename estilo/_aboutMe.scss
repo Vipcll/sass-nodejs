@@ -1,0 +1,43 @@
+$width: ("pequeño": 40%, "medio": 60%, "full": 100%);
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div article:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    h1,
+    article h2 {
+        font-family: $fuente;
+        position: relative;
+    }
+}
+
+.cajaCarousel {
+    margin: 50px;
+}
+
+.carousel {
+    margin: 40px auto;
+    width: map.get($font-weights, "medio");
+}
+
+.imanes {
+    width: map.get($font-weights, "full");
+}
+
+@media (min-width:768px) {
+    .carousel {
+        width: map.get($font-weights, "full");
+    }
+}
+
+@media (min-width:1400px) {
+    .carousel {
+        width: map.get($font-weights, "pequeño");
+    }
+}

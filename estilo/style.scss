@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+
+@import "generales";
+@import "aboutMe";
+@import "contacto";
+@import "personalBlog";
+@import "proyect";
+
+
+
+.mainHome {
+  h1 {
+    position: relative;
+    top: 20px;
+    margin: 20vw 10vw 10vw 4vw;
+  }
+  section figure {
+    width: 75vw;
+    max-width:1000px;
+    margin:auto;
+    img {
+      width: $full;
+      border:5px solid $color;
+      border-radius: 450px;
+      box-shadow: 5px 5px 30px 1px $color;
+      margin: 20vh 0 20vh 0;
+    }
+  }
+}
+
+.viilogo
+{
+  border:5px solid #300bad;
+  border-radius: 500px;
+  box-shadow: 5px 5px 30px 1px #000000;
+}
+
+main
+{
+  min-width: 290px;
+  min-height: 50px;
+}

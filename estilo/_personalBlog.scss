@@ -1,0 +1,39 @@
+.personalBlog h1 {
+    font-family: $fuente;
+    position: relative;
+}
+
+.personalBlog {
+    text-align: center;
+
+    h1 {
+        font-family: $fuente;
+        position: relative;
+    }
+
+    div article p {
+        width: 70vw;
+        @extend %uso;
+    }
+
+    div article p:hover {
+        transform: scale(1.1);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    div h3 {
+        font-family: $fuente;
+        border-radius: 10px;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+.articuloshisto
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 10vw;
+}

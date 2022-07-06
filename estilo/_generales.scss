@@ -1,0 +1,55 @@
+$fuente: 'Koulen',
+cursive;
+$color: #560bad;
+$full: 100%;
+
+%uso {
+    border: 5px solid #e80101;
+    border-radius: 10px;
+    background-color: #e80101;
+    background-size: cover;
+}
+
+%flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Akshar', sans-serif;
+}
+
+footer {
+    min-width: 290px;
+    min-height: 50px;
+    max-width: $full;
+    max-height: $full;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+
+    ul li {
+        @extend %flex;
+        justify-content: center;
+        margin: 3vw 0% 0% 3vw;
+
+        a img:hover {
+            transform: scale(2);
+            box-shadow: 5px 5px 30px 1px $color;
+            border-radius: 450px;
+        }
+    }
+}
+
+#redes ul {
+    @extend %flex;
+    justify-content: space-around;
+}
+

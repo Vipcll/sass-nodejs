@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap");
+.proyect p, .personalBlog div article p {
+  border: 5px solid #e80101;
+  border-radius: 10px;
+  background-color: #e80101;
+  background-size: cover;
+}
+
+#redes ul, footer ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Akshar", sans-serif;
+}
+
+footer {
+  min-width: 290px;
+  min-height: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+}
+footer ul li {
+  justify-content: center;
+  margin: 3vw 0% 0% 3vw;
+}
+footer ul li a img:hover {
+  transform: scale(2);
+  box-shadow: 5px 5px 30px 1px #560bad;
+  border-radius: 450px;
+}
+
+#redes ul {
+  justify-content: space-around;
+}
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.aboutMe div article:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.aboutMe h1,
+.aboutMe article h2 {
+  font-family: "Koulen", cursive;
+  position: relative;
+}
+
+.cajaCarousel {
+  margin: 50px;
+}
+
+.carousel {
+  margin: 40px auto;
+  width: 60%;
+}
+
+.imanes {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .carousel {
+    width: 40%;
+  }
+}
+.contacto {
+  text-align: center;
+  border: 3px solid #e80101;
+  border-radius: 5px;
+  box-shadow: 2px 4px 13px 1px #e80101;
+}
+.contacto img {
+  max-width: 30vw;
+  min-height: 30vh;
+  border: 5px solid #560bad;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 1px #560bad;
+  margin: 0;
+}
+.contacto article {
+  text-align: center;
+  padding: 0;
+  margin: 1px;
+  border-radius: 5px;
+  border-top: 3px solid #e80101;
+  box-shadow: 2px 4px 13px 1px #e80101;
+}
+
+.personalBlog h1 {
+  font-family: "Koulen", cursive;
+  position: relative;
+}
+
+.personalBlog {
+  text-align: center;
+}
+.personalBlog h1 {
+  font-family: "Koulen", cursive;
+  position: relative;
+}
+.personalBlog div article p {
+  width: 70vw;
+}
+.personalBlog div article p:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.personalBlog div h3 {
+  font-family: "Koulen", cursive;
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+}
+
+.articuloshisto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 10vw;
+}
+
+.proyect h1,
+.proyect h2 {
+  font-family: "Koulen", cursive;
+  position: relative;
+}
+.proyect img {
+  max-width: 30vh;
+  min-height: 20vh;
+  border: 5px solid #560bad;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 1px #560bad;
+  margin: 4vw 0 0 0;
+}
+
+.mainHome h1 {
+  position: relative;
+  top: 20px;
+  margin: 20vw 10vw 10vw 4vw;
+}
+.mainHome section figure {
+  width: 75vw;
+  max-width: 1000px;
+  margin: auto;
+}
+.mainHome section figure img {
+  width: 100%;
+  border: 5px solid #560bad;
+  border-radius: 450px;
+  box-shadow: 5px 5px 30px 1px #560bad;
+  margin: 20vh 0 20vh 0;
+}
+
+.viilogo {
+  border: 5px solid #300bad;
+  border-radius: 500px;
+  box-shadow: 5px 5px 30px 1px #000000;
+}
+
+main {
+  min-width: 290px;
+  min-height: 50px;
+}/*# sourceMappingURL=style.css.map */
