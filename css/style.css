@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap");
-.personalBlog div article p, .proyect p {
+.proyect p, .personalBlog div article p {
   border: 5px solid #e80101;
   border-radius: 10px;
   background-color: #e80101;
-  background-size: cover; }
+  background-size: cover;
+}
 
-footer ul li, #redes ul {
+#redes ul, footer ul li {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+}
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
 body {
   background-color: antiquewhite;
-  font-family: 'Akshar', sans-serif; }
+  font-family: "Akshar", sans-serif;
+}
 
 footer {
   min-width: 290px;
@@ -26,32 +30,59 @@ footer {
   max-height: 100%;
   text-align: center;
   margin: 0%;
-  padding: 0%; }
-  footer ul li {
-    justify-content: center;
-    margin: 3vw 0% 0% 3vw; }
-    footer ul li a img:hover {
-      transform: scale(2);
-      box-shadow: 5px 5px 30px 1px #560bad;
-      border-radius: 450px; }
+  padding: 0%;
+}
+footer ul li {
+  justify-content: center;
+  margin: 3vw 0% 0% 3vw;
+}
+footer ul li a img:hover {
+  transform: scale(2);
+  box-shadow: 5px 5px 30px 1px #560bad;
+  border-radius: 450px;
+}
 
 #redes ul {
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .aboutMe {
   display: grid;
-  grid-template-columns: 1fr; }
-  .aboutMe div article:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 1s; }
-  .aboutMe h1,
-  .aboutMe article h2 {
-    font-family: "Koulen", cursive;
-    position: relative; }
+  grid-template-columns: 1fr;
+}
+.aboutMe div article:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.aboutMe h1,
+.aboutMe article h2 {
+  font-family: "Koulen", cursive;
+  position: relative;
+  padding: 1rem;
+}
 
 .cajaCarousel {
-  margin: 50px; }
+  margin: 1vw;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+@media (max-width: 768px) {
+  .cajaCarousel {
+    display: none;
+  }
+}
+
+.aboutSkills {
+  padding: 1rem;
+  max-width: 30vw;
+}
+
+.aboutHistoria {
+  padding: 1rem;
+  max-width: 30vw;
+  margin: 0 0 0 50px;
+}
 
 .contacto {
   text-align: center;
@@ -59,85 +90,111 @@ footer {
   border-radius: 5px;
   box-shadow: 2px 4px 13px 1px #e80101;
   margin: 0;
-  border-radius: 5px; }
-  .contacto img {
-    max-width: 30vw;
-    min-height: 30vh;
-    border: 5px solid #560bad;
-    border-radius: 10px;
-    box-shadow: 5px 5px 30px 1px #560bad;
-    margin: 0;
-    border-radius: 5px; }
-  .contacto article {
-    text-align: center;
-    padding: 0;
-    border-radius: 5px;
-    border-top: 3px solid #e80101;
-    box-shadow: 2px 4px 13px 1px #e80101;
-    margin: 1px;
-    border-radius: 5px; }
+  border-radius: 5px;
+}
+.contacto img {
+  max-width: 30vw;
+  min-height: 30vh;
+  border: 5px solid #560bad;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 1px #560bad;
+  margin: 0;
+  border-radius: 5px;
+}
+.contacto article {
+  text-align: center;
+  padding: 0;
+  border-radius: 5px;
+  border-top: 3px solid #e80101;
+  box-shadow: 2px 4px 13px 1px #e80101;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+.row {
+  --bs-gutter-x: none;
+  --bs-gutter-y: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
 
 .personalBlog h1 {
   font-family: "Koulen", cursive;
-  position: relative; }
+  position: relative;
+}
 
 .personalBlog {
-  text-align: center; }
-  .personalBlog h1 {
-    font-family: "Koulen", cursive;
-    position: relative; }
-  .personalBlog div article p {
-    width: 70vw; }
-  .personalBlog div article p:hover {
-    transform: scale(1.1);
-    transition-property: all;
-    transition-duration: 1s; }
-  .personalBlog div h3 {
-    font-family: "Koulen", cursive;
-    border-radius: 10px;
-    background-size: cover;
-    position: relative; }
+  text-align: center;
+}
+.personalBlog h1 {
+  font-family: "Koulen", cursive;
+  position: relative;
+}
+.personalBlog div article p {
+  margin: 0 0 0 25vw;
+  width: 50vw;
+}
+.personalBlog div article p:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.personalBlog div h3 {
+  font-family: "Koulen", cursive;
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+}
 
 .articuloshisto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  margin-bottom: 10vw; }
+  margin-bottom: 10vw;
+}
 
 .proyect h1,
 .proyect h2 {
   font-family: "Koulen", cursive;
-  position: relative; }
-
+  position: relative;
+}
 .proyect img {
   max-width: 30vh;
   min-height: 20vh;
   border: 5px solid #560bad;
   border-radius: 10px;
   box-shadow: 5px 5px 30px 1px #560bad;
-  margin: 4vw 0 0 0; }
+  margin: 4vw 0 0 0;
+}
 
 .mainHome h1 {
   position: relative;
   top: 20px;
-  margin: 20vw 10vw 10vw 4vw; }
-
+  margin: 20vw 10vw 10vw 4vw;
+}
 .mainHome section figure {
   width: 75vw;
   max-width: 1000px;
-  margin: auto; }
-  .mainHome section figure img {
-    width: 100%;
-    border: 5px solid #560bad;
-    border-radius: 450px;
-    box-shadow: 5px 5px 30px 1px #560bad;
-    margin: 20vh 0 20vh 0; }
+  margin: auto;
+}
+.mainHome section figure img {
+  width: 100%;
+  border: 5px solid #560bad;
+  border-radius: 450px;
+  box-shadow: 5px 5px 30px 1px #560bad;
+  margin: 20vh 0 20vh 0;
+}
 
 .viilogo {
   border: 5px solid #300bad;
   border-radius: 500px;
-  box-shadow: 5px 5px 30px 1px #000000; }
+  box-shadow: 5px 5px 30px 1px #000000;
+}
 
 main {
   min-width: 290px;
-  min-height: 50px; }
+  min-height: 50px;
+}/*# sourceMappingURL=style.css.map */

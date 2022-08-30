@@ -28,3 +28,13 @@
         @include theme($var: 1px);
     }
 }
+
+.row {
+    --bs-gutter-x: none; 
+    --bs-gutter-y: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}

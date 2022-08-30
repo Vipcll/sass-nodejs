@@ -47,98 +47,87 @@
     </header>
 
     <main class="personalBlog">
-        <h1>Mi Blog Personal</h1>
+        <h1>Mi Blog de codigo Personal</h1>
         <div>
             <article class="quince">
                 <h2>15/5/22</h2>
                 <p>
-                    Los DFD son asincrónicos, los procesos no se dibujan ni se numeran de acuerdo a un orden
-                    determinado.
-                    •Almacenes no se conectan entre sí y no se grafican en el modelo ambietal •Las entidades NO se
-                    conectan
-                    entre sí. Generan nueva información en el sistema o le piden, no «dialogan» entre sí. •Si un proceso
-                    sólo
-                    tiene salidas o entradas, algo está mal… Cómo puede transformar un dato que no recibió? (entrada sin
-                    salida)
-                    o… Para qué recibe un dato si no hace nada con él? (salida sin entrada) •Las acciones o procesos que
-                    son
-                    manuales y no se conectan con el sistema, NO se grafican.Los DFD son asincrónicos, los procesos no
-                    se
-                    dibujan ni se numeran de acuerdo a un orden determinado. •Almacenes no se conectan entre sí y no se
-                    grafican
-                    en el modelo ambietal •Las entidades NO se conectan entre sí. Generan nueva información en el
-                    sistema o
-                    le
-                    piden, no «dialogan» entre sí. •Si un proceso sólo tiene salidas o entradas, algo está mal… Cómo
-                    puede
-                    transformar un dato que no recibió? (entrada sin salida) o… Para qué recibe un dato si no hace nada
-                    con
-                    él?
-                    (salida sin entrada) •Las acciones o procesos que son manuales y no se conectan con el sistema, NO
-                    se
-                    grafican.
+                    Lenguaje C
+                    int getInt(char mensaje[],char mensajeError[],int max,int min)
+                    {
+                        int num;
+                        int aux;
+                        printf("%s", mensaje);
+                        scanf("%d", &num);
+
+                        aux = validar_numero(max,min,num);
+
+                        while(aux == FALSO)
+                        {
+                            fflush(stdin);
+                            printf(mensajeError);
+                            scanf("%d", &num);
+                            aux = validar_numero(max,min,num);
+                        }
                 </p>
             </article>
 
             <article class="dieciseis">
                 <h2>16/5/22</h2>
 
-                <p> Los DFD son asincrónicos, los procesos no se dibujan ni se numeran de acuerdo a un orden
-                    determinado.
-                    •Almacenes no se conectan entre sí y no se grafican en el modelo ambietal •Las entidades NO se
-                    conectan
-                    entre sí. Generan nueva información en el sistema o le piden, no «dialogan» entre sí. •Si un proceso
-                    sólo
-                    tiene salidas o entradas, algo está mal… Cómo puede transformar un dato que no recibió? (entrada sin
-                    salida)
-                    o… Para qué recibe un dato si no hace nada con él? (salida sin entrada) •Las acciones o procesos que
-                    son
-                    manuales y no se conectan con el sistema, NO se grafican.Los DFD son asincrónicos, los procesos no
-                    se
-                    dibujan ni se numeran de acuerdo a un orden determinado. •Almacenes no se conectan entre sí y no se
-                    grafican
-                    en el modelo ambietal •Las entidades NO se conectan entre sí. Generan nueva información en el
-                    sistema o
-                    le
-                    piden, no «dialogan» entre sí. •Si un proceso sólo tiene salidas o entradas, algo está mal… Cómo
-                    puede
-                    transformar un dato que no recibió? (entrada sin salida) o… Para qué recibe un dato si no hace nada
-                    con
-                    él?
-                    (salida sin entrada) •Las acciones o procesos que son manuales y no se conectan con el sistema, NO
-                    se
-                    grafican. </p>
+                <p> Lenguaje C
+                    int validar_nombre(char cadena[])
+                    {
+                        int cadenaValida = 0;
+                        int cantidadCaracteres;
+                        cantidadCaracteres=strlen(cadena);
+                    
+                        if(cantidadCaracteres != 0)
+                        {
+                            for(int i=0;i< cantidadCaracteres; i++)
+                            {
+                                if(isalpha(cadena[i])!=0)
+                                {
+                                    cadenaValida = 1;
+                                    break;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            cadenaValida = 0;
+                        }
+                    
+                    
+                        return cadenaValida;
+                    } </p>
             </article>
 
             <article class="diecisiete">
                 <h2>17/5/22 </h2>
 
                 <p>
-                    Los DFD son asincrónicos, los procesos no se dibujan ni se numeran de acuerdo a un orden
-                    determinado.
-                    •Almacenes no se conectan entre sí y no se grafican en el modelo ambietal •Las entidades NO se
-                    conectan
-                    entre sí. Generan nueva información en el sistema o le piden, no «dialogan» entre sí. •Si un proceso
-                    sólo
-                    tiene salidas o entradas, algo está mal… Cómo puede transformar un dato que no recibió? (entrada sin
-                    salida)
-                    o… Para qué recibe un dato si no hace nada con él? (salida sin entrada) •Las acciones o procesos que
-                    son
-                    manuales y no se conectan con el sistema, NO se grafican.Los DFD son asincrónicos, los procesos no
-                    se
-                    dibujan ni se numeran de acuerdo a un orden determinado. •Almacenes no se conectan entre sí y no se
-                    grafican
-                    en el modelo ambietal •Las entidades NO se conectan entre sí. Generan nueva información en el
-                    sistema o
-                    le
-                    piden, no «dialogan» entre sí. •Si un proceso sólo tiene salidas o entradas, algo está mal… Cómo
-                    puede
-                    transformar un dato que no recibió? (entrada sin salida) o… Para qué recibe un dato si no hace nada
-                    con
-                    él?
-                    (salida sin entrada) •Las acciones o procesos que son manuales y no se conectan con el sistema, NO
-                    se
-                    grafican.
+                    lenguaje C
+                    int validar_numero(int max, int min, int num)
+                    {
+                        int valido;
+
+                        if(num<max&&num>min)
+                        {
+                            valido = TRUE;
+                        }
+                        else
+                        {
+                            valido = FALSO;
+                        }
+                        
+                        while(valido = FALSO)
+                        {
+                            printf("%s", mensajeError);
+                            scanf("%d", &num);
+                        }
+
+                        return valido;
                 </p>
             </article>
         </div>

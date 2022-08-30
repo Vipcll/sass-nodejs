@@ -12,7 +12,8 @@
     }
 
     div article p {
-        width: 70vw;
+        margin: 0 0 0 25vw;
+        width: 50vw;
         @extend %uso;
     }
 
